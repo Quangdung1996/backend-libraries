@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PansyDev.Common.Web\PansyDev.Common.Web.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HotChocolate.AspNetCore" Version="12.0.0-preview.29" />
+      <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="12.0.0-preview.29" />
+      <PackageReference Include="HotChocolate.Data" Version="12.0.0-preview.29" />
+      <PackageReference Include="HotChocolate.Data.EntityFramework" Version="12.0.0-preview.29" />
+    </ItemGroup>
+
+</Project>

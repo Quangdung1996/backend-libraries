@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Domain", "src\PansyDev.Common.Domain\PansyDev.Common.Domain.csproj", "{6C9DA270-3C11-4B19-B6E9-77BD212D9BED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Application", "src\PansyDev.Common.Application\PansyDev.Common.Application.csproj", "{F373D7B3-AA81-497C-B090-9C459F8C6CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Infrastructure", "src\PansyDev.Common.Infrastructure\PansyDev.Common.Infrastructure.csproj", "{C6FF3DCA-3533-4782-84A9-0F02B0141BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Infrastructure.EntityFramework", "src\PansyDev.Common.Infrastructure.EntityFramework\PansyDev.Common.Infrastructure.EntityFramework.csproj", "{26DB8AD0-B058-4447-80B5-86617DBF0BD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Web", "src\PansyDev.Common.Web\PansyDev.Common.Web.csproj", "{D6C7DED1-30E4-48BC-AE91-15E710B39BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Web.GraphQL", "src\PansyDev.Common.Web.GraphQL\PansyDev.Common.Web.GraphQL.csproj", "{C536A10F-00FC-4212-9E73-35E2752AE453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PansyDev.Common.Infrastructure.Authentication", "src\PansyDev.Common.Infrastructure.Authentication\PansyDev.Common.Infrastructure.Authentication.csproj", "{CA2B46B2-4F61-4A0B-B48E-37D46112FBF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C9DA270-3C11-4B19-B6E9-77BD212D9BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9DA270-3C11-4B19-B6E9-77BD212D9BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9DA270-3C11-4B19-B6E9-77BD212D9BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9DA270-3C11-4B19-B6E9-77BD212D9BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F373D7B3-AA81-497C-B090-9C459F8C6CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F373D7B3-AA81-497C-B090-9C459F8C6CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F373D7B3-AA81-497C-B090-9C459F8C6CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F373D7B3-AA81-497C-B090-9C459F8C6CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FF3DCA-3533-4782-84A9-0F02B0141BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FF3DCA-3533-4782-84A9-0F02B0141BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FF3DCA-3533-4782-84A9-0F02B0141BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FF3DCA-3533-4782-84A9-0F02B0141BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26DB8AD0-B058-4447-80B5-86617DBF0BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DB8AD0-B058-4447-80B5-86617DBF0BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DB8AD0-B058-4447-80B5-86617DBF0BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DB8AD0-B058-4447-80B5-86617DBF0BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C7DED1-30E4-48BC-AE91-15E710B39BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C7DED1-30E4-48BC-AE91-15E710B39BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C7DED1-30E4-48BC-AE91-15E710B39BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C7DED1-30E4-48BC-AE91-15E710B39BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C536A10F-00FC-4212-9E73-35E2752AE453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C536A10F-00FC-4212-9E73-35E2752AE453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C536A10F-00FC-4212-9E73-35E2752AE453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C536A10F-00FC-4212-9E73-35E2752AE453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2B46B2-4F61-4A0B-B48E-37D46112FBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2B46B2-4F61-4A0B-B48E-37D46112FBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2B46B2-4F61-4A0B-B48E-37D46112FBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2B46B2-4F61-4A0B-B48E-37D46112FBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
