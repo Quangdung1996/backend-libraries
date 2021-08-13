@@ -11,7 +11,7 @@ namespace PansyDev.Common.Web.GraphQL.Extensions
     {
         private const string OperationFailureResultType = "OperationFailureResult";
 
-        public static void AddCoreTypes(this IRequestExecutorBuilder builder)
+        public static void AddCommonTypes(this IRequestExecutorBuilder builder)
         {
             builder.AddObjectType<OperationFailureResult>(x => x.Name(OperationFailureResultType));
             builder.AddTypeConverter<OperationFailureConverter>();
