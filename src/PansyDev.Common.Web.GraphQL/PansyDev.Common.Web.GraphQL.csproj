@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PansyDev.Common.Web\PansyDev.Common.Web.csproj" />
+      <ProjectReference Include="$(PansyDevCommonPath)\PansyDev.Common.Web\PansyDev.Common.Web.csproj" />
     </ItemGroup>
 
     <ItemGroup>

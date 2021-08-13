@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PansyDev.Common.Infrastructure\PansyDev.Common.Infrastructure.csproj" />
+      <ProjectReference Include="$(PansyDevCommonPath)\PansyDev.Common.Infrastructure\PansyDev.Common.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>

@@ -2,4 +2,8 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PansyDevCommonPath>$(SolutionDir)/src</PansyDevCommonPath>
+  </PropertyGroup>
 </Project>
