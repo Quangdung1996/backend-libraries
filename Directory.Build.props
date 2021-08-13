@@ -1,9 +1,8 @@
 <Project>
   <PropertyGroup>
     <Nullable>enable</Nullable>
+    <PansyDevCommonPath>$(SolutionDir)src</PansyDevCommonPath>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <PansyDevCommonPath>$(SolutionDir)/src</PansyDevCommonPath>
-  </PropertyGroup>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))"/>
 </Project>
