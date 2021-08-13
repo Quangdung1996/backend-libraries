@@ -21,15 +21,15 @@ namespace PansyDev.Common.Web.Extensions
                 var folder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuration");
 
                 config.AddJsonFile(Path.Combine(folder, "appsettings.json"), true);
-                config.AddJsonFile(Path.Combine(folder, "appsettings.core.json"));
+                config.AddJsonFile(Path.Combine(folder, "appsettings.common.json"));
 
                 if (env.IsDevelopment())
                 {
                     config.AddJsonFile(Path.Combine(folder, "appsettings.dev.json"), true);
-                    config.AddJsonFile(Path.Combine(folder, "appsettings.core.dev.json"));
+                    config.AddJsonFile(Path.Combine(folder, "appsettings.common.dev.json"));
                 }
 
-                config.AddUserSecrets<CommonInfrastructureModule>(true);
+                config.AddUserSecrets<CommonInfrastructureModule>();
                 config.AddUserSecrets<TInfraModule>(true);
             });
 
