@@ -29,7 +29,7 @@ namespace PansyDev.Common.Web.Extensions
                     config.AddJsonFile(Path.Combine(folder, "appsettings.common.dev.json"));
                 }
 
-                config.AddUserSecrets<CommonInfrastructureModule>();
+                config.AddUserSecrets<CommonInfrastructureModule>(env.IsProduction());
                 config.AddUserSecrets<TInfraModule>(true);
             });
 
