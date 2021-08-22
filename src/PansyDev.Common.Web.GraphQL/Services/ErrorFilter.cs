@@ -1,6 +1,8 @@
-﻿using HotChocolate;
+﻿using System.Collections.Generic;
+using HotChocolate;
 using Microsoft.Extensions.Logging;
 using PansyDev.Common.Application.Exceptions;
+using Volo.Abp.Validation;
 
 namespace PansyDev.Common.Web.GraphQL.Services
 {
@@ -15,14 +17,26 @@ namespace PansyDev.Common.Web.GraphQL.Services
 
         public IError OnError(IError error)
         {
-            if (error.Exception is InvalidRequestException)
+            switch (error.Exception)
             {
-                return new Error(error.Exception.Message)
-                    .WithCode("IR:001");
+                case InvalidRequestException:
+                {
+                    return new Error(error.Exception.Message)
+                        .WithCode("IR:001");
+                }
+                case AbpValidationException validationException:
+                {
+                    return new Error("Validation failed. See validationErrors for details.")
+                        .WithExtensions(new Dictionary<string, object?>
+                            {["validationErrors"] = validationException.ValidationErrors});
+                }
+                case not null:
+                {
+                    _logger.LogError(error.Exception, "An exception occurred on request handling");
+                    return error;
+                }
+                default: return error;
             }
-
-            _logger.LogError(error.Exception, "An exception occurred on request handling");
-            return error;
         }
     }
 }
