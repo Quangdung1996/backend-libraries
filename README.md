@@ -20,7 +20,7 @@ git submodule add https://github.com/pansydev/pansy_libraries src/PansyDev.Commo
 
 Create `Directory.Build.props` with this content:
 
-```msbuild
+```xml
 
 <Project>
     <PropertyGroup>
@@ -32,7 +32,7 @@ Create `Directory.Build.props` with this content:
 
 And link packages like this:
 
-```msbuild
+```xml
 
 <ItemGroup>
     <ProjectReference Include="$(PansyDevCommonPath)\PansyDev.Common.Domain\PansyDev.Common.Domain.csproj"/>
