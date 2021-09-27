@@ -15,7 +15,7 @@ Each project consist of four layers:
 Just reference this repo as a git submodule:
 
 ```shell
-git submodule add https://github.com/pansydev/pansy_libraries src/PansyDev.Common
+git submodule add https://github.com/pansydev/backend-libraries src/PansyDev.Common
 ```
 
 Create `Directory.Build.props` with this content:
