@@ -15,6 +15,12 @@ namespace PansyDev.Common.Web.GraphQL.Extensions
         {
             builder.AddObjectType<OperationFailureResult>(x => x.Name(OperationFailureResultType));
             builder.AddTypeConverter<OperationFailureConverter>();
+
+            builder.AddObjectType<OperationSuccessResult>();
+
+            builder.ConfigureSchema(schemaBuilder => schemaBuilder.AddUnionType<OperationResult>(x => x
+                .Type(new NamedTypeNode(OperationFailureResultType))
+                .Type(new NamedTypeNode(nameof(OperationSuccessResult)))));
         }
 
         public static void AddOperationResult<T>(this IRequestExecutorBuilder builder, string resultName)
@@ -27,8 +33,8 @@ namespace PansyDev.Common.Web.GraphQL.Extensions
                 .Type(new NamedTypeNode(successResultType))
                 .ResolveAbstractType((t, result) =>
                 {
-                    var nonNullType = (NonNullType)t.Selection.Type;
-                    var unionType = (UnionType)nonNullType.Type;
+                    var nonNullType = (NonNullType) t.Selection.Type;
+                    var unionType = (UnionType) nonNullType.Type;
                     return result is IOperationFailureResult
                         ? unionType.Types[OperationFailureResultType]
                         : unionType.Types[successResultType];

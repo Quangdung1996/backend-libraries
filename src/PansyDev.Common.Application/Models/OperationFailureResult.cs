@@ -2,7 +2,7 @@
 {
     public class OperationFailureResult<T> : OperationResult<T>, IOperationFailureResult
     {
-        public OperationFailureResult(string code)
+        public OperationFailureResult(string code) : base(false)
         {
             Code = code;
         }
@@ -12,7 +12,7 @@
 
     public class OperationFailureResult : OperationResult, IOperationFailureResult
     {
-        public OperationFailureResult(string code)
+        public OperationFailureResult(string code) : base(false)
         {
             Code = code;
         }
